@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lesly Castro Galindo | Economics & Data Science</title>
+<title>Lesly Castro Galindo | Economics & Data Analysis</title>
 
 <style>
 
@@ -18,63 +18,56 @@ nav{
 background:white;
 padding:18px 60px;
 border-bottom:1px solid #eaeaea;
+}
+
+nav a{
+margin-right:25px;
+text-decoration:none;
 font-weight:600;
 color:#003366;
 }
 
 .container{
-max-width:900px;
-margin:80px auto;
+max-width:1000px;
+margin:60px auto;
 background:white;
-padding:60px;
-text-align:center;
+padding:50px;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
+display:grid;
+grid-template-columns:300px 1fr;
+gap:60px;
 }
 
-img{
-width:180px;
+.left-column{
+text-align:center;
+}
+
+.left-column img{
+width:220px;
 border-radius:50%;
 margin-bottom:20px;
 }
 
-h1{
-margin-bottom:10px;
+.left-column h1{
+margin-bottom:5px;
 }
 
-p{
+.left-column h2{
+font-weight:400;
+font-size:1rem;
 color:#555;
-font-size:1.05rem;
-line-height:1.6;
 }
 
-.buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+.right-column h3{
+border-bottom:2px solid #eaeaea;
+padding-bottom:6px;
+margin-top:30px;
 }
 
-.btn{
-background:#003366;
-color:white;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-transition:0.2s;
+@media (max-width:900px){
+.container{
+grid-template-columns:1fr;
 }
-
-.btn:hover{
-background:#0055a5;
-}
-
-footer{
-text-align:center;
-margin-top:40px;
-padding:20px;
-color:#777;
-font-size:0.9rem;
 }
 
 </style>
@@ -83,42 +76,51 @@ font-size:0.9rem;
 <body>
 
 <nav>
-Lesly Castro Galindo | Economics & Data Science
+<a href="index.html">Home</a>
+<a href="blog.html">Blog</a>
+<a href="resume.html">Resume</a>
+<a href="outside.html">Outside the Classroom</a>
+<a href="https://www.linkedin.com/in/leslycastrogalindo/" target="_blank">LinkedIn</a>
 </nav>
 
 <div class="container">
 
-<img src="lcg_pic.JPG">
+<div class="left-column">
+<img src="lcg_pic.JPG" alt="Lesly Castro Galindo">
+
 <h1>Lesly Castro Galindo</h1>
-<h2>B.A. in Economics | William & Mary</h2>
-<p class="hometown">Alexandria, Virginia</p>
+<h2>Economics Major</h2>
+<p>Alexandria, VA</p>
+</div>
 
-<h1>About Me</h1>
+<div class="right-column">
 
+<h3>About Me</h3>
 <p>
-Hi! I'm Lesly Castro Galindo, a senior at the College of William & Mary, majoring in Economics with a minor in Data Science. I'm passionate about macroeconomics and accounting, and am excited to grow my expertise in policy and data-driven economic analysis. Through my coursework, including Econometrics, Intermediate Micro & Macro, International Trade Theory, and Data Science, I’ve developed a strong foundation in both economic theory and applied data analysis. I enjoy using tools like Stata, Python, and Excel to explore trends, solve problems, and inform strategic decisions. My recent research project includes analyzing trade patterns and studying inflation-unemployment dynamics through the Phillips Curve. These experiences sparked a deeper interest in combining policy and data to better understand global markets and their impact on consumers and producers. I’m eager to continue learning and contributing to the intersection of economics, accounting, and data science in future roles.
-Outside the classroom, I enjoy moving my body! I have played soccer since I can remember, picked up pickleball, and have a love/hate relationship with running. I love going to the beach and spending quality time with my friends. I have been a Taylor Swift fan since I can remember! 
+I am an economics student at William & Mary with interests in international trade,
+economic policy, and research-driven analysis. My work focuses on applying data
+to inform public policy decisions.
 </p>
 
-<div class="buttons">
+<h3>Education</h3>
+<p>
+<strong>College of William & Mary</strong><br>
+B.A. Economics<br>
+Expected Graduation: 2026
+</p>
 
-<a class="btn" href="resume.html">View Resume</a>
-
-<a class="btn" href="blog.html">Read Blog</a>
-
-<a class="btn" href="outside.html">Outside the Classroom</a>
-
-<a class="btn" href="https://www.linkedin.com/in/leslycastrogalindo/" target="_blank">
-LinkedIn
-</a>
+<h3>Skills</h3>
+<ul>
+<li>Data Analysis (Excel, R, Python)</li>
+<li>Policy Writing</li>
+<li>Economic Modeling</li>
+<li>Public Speaking</li>
+</ul>
 
 </div>
 
 </div>
-
-<footer>
-© 2026 Lesly Castro Galindo
-</footer>
 
 </body>
 </html>
+```
