@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,8 +48,29 @@ color:#555;
 line-height:1.6;
 }
 
-.song-list li{
-margin-bottom:8px;
+/* Song images */
+
+.song{
+display:flex;
+align-items:center;
+margin-bottom:15px;
+}
+
+.song img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:8px;
+margin-right:15px;
+}
+
+/* Large images */
+
+.section img{
+width:100%;
+max-width:600px;
+border-radius:10px;
+margin-top:15px;
 }
 
 </style>
@@ -72,26 +92,44 @@ margin-bottom:8px;
 
 <div class="section">
 <h2>My Top 3 Songs Right Now</h2>
-<ul class="song-list">
-<li>"Opalite" – Taylor Swift</li>
-<li>"Dance With me" – Bruno Mars</li>
-<li>"Breakin' Dishes" – Rihanna</li>
-</ul>
+
+<div class="song">
+<img src="opalite.jpg" alt="Opalite">
+<p>"Opalite" by Taylor Swift</p>
+</div>
+
+<div class="song">
+<img src="dance.jpg" alt="Dance With Me">
+<p>"Dance With Me" by Bruno Mars</p>
+</div>
+
+<div class="song">
+<img src="dishes.jpg" alt="Breakin Dishes">
+<p>"Breakin' Dishes" by Rihanna</p>
+</div>
+
 </div>
 
 <div class="section">
 <h2>Favorite William & Mary Memory</h2>
+
+<img src="wm_memory.jpg" alt="Sunken Garden William and Mary">
+
 <p>
-One of my favorite memories at William & Mary has been spending time at Sunken Gardens with my friends. I have had countless picnics and club meetings, and even watched solar eclipses there. In my second year, I lived at Chandler Hall, which is less than a minute's walk from. No matter what, Sunken Garden holds endless memories, and I couldn't ask for anything more. 
+One of my favorite memories at William & Mary has been spending time at Sunken Gardens with my friends. I have had countless picnics and club meetings, and even watched solar eclipses there. In my second year, I lived at Chandler Hall, which is less than a minute's walk from. No matter what, Sunken Garden holds endless memories, and I couldn't ask for anything more.
 </p>
+
 </div>
 
 <div class="section">
 <h2>Favorite Trip</h2>
-<p>
-One of my favorite trips was summer 2024, when my younger sister and I flew to Los Angeles, California. While we were there, we did a lot of exploring, adventured in Hollywood, went to Malibu, Santa Monica, and Disneyland, drove up to Sequoia, and visited Yosemite. It was a busy week, but it was one of my favorite trips ever! 
 
+<img src="yosemite.jpg" alt="Los Angeles Trip">
+
+<p>
+One of my favorite trips was summer 2024, when my younger sister and I flew to Los Angeles, California. While we were there, we did a lot of exploring, adventured in Hollywood, went to Malibu, Santa Monica, and Disneyland, drove up to Sequoia, and visited Yosemite. It was a busy week, but it was one of my favorite trips ever!
 </p>
+
 </div>
 
 </div>
