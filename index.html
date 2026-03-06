@@ -23,30 +23,14 @@ color:#003366;
 }
 
 .container{
-max-width:900px;
+max-width:1000px;
 margin:80px auto;
 background:white;
 padding:60px;
-text-align:center;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 }
 
-img{
-width:180px;
-border-radius:50%;
-margin-bottom:20px;
-margin-top:30px;
-}
-
-h1{
-margin-bottom:10px;
-}
-
-p{
-color:#555;
-font-size:1.05rem;
-line-height:1.6;
-}
+/* NAV BUTTONS */
 
 .buttons{
 margin-bottom:40px;
@@ -70,12 +54,95 @@ transition:0.2s;
 background:#0055a5;
 }
 
+/* TWO COLUMN LAYOUT */
+
+.profile{
+display:flex;
+gap:50px;
+align-items:flex-start;
+}
+
+/* LEFT SIDE */
+
+.left{
+width:35%;
+text-align:center;
+}
+
+.left img{
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.left h1{
+margin-bottom:5px;
+}
+
+.left h3{
+margin-top:5px;
+font-weight:500;
+color:#555;
+}
+
+.skills{
+margin-top:25px;
+text-align:left;
+}
+
+.skills h3{
+color:#003366;
+}
+
+.skills ul{
+padding-left:18px;
+}
+
+.skills li{
+margin-bottom:6px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+width:65%;
+}
+
+.right h1{
+margin-top:0;
+}
+
+.right p{
+color:#555;
+font-size:1.05rem;
+line-height:1.6;
+}
+
 footer{
 text-align:center;
 margin-top:40px;
 padding:20px;
 color:#777;
 font-size:0.9rem;
+}
+
+/* MOBILE */
+
+@media (max-width:800px){
+
+.profile{
+flex-direction:column;
+}
+
+.left, .right{
+width:100%;
+text-align:center;
+}
+
+.skills{
+text-align:center;
+}
+
 }
 
 </style>
@@ -90,34 +157,63 @@ Lesly Castro Galindo | Economics & Data Science
 <div class="container">
 
 <div class="buttons">
-
 <a class="btn" href="index.html">Home</a>
-
 <a class="btn" href="resume.html">Resume</a>
-
 <a class="btn" href="blog.html">Blog</a>
-
 <a class="btn" href="outside.html">Outside the Classroom</a>
-
-<a class="btn" href="https://www.linkedin.com/in/leslycastrogalindo/" target="_blank">
-LinkedIn
-</a>
-
+<a class="btn" href="https://www.linkedin.com/in/leslycastrogalindo/" target="_blank">LinkedIn</a>
 </div>
+
+<div class="profile">
+
+<!-- LEFT SIDE -->
+
+<div class="left">
 
 <img src="lcg_pic.JPG">
 
 <h1>Lesly Castro Galindo</h1>
-<h2>B.A. in Economics | William & Mary</h2>
-<p class="hometown">Alexandria, Virginia</p>
+<h3>B.A. Economics | William & Mary</h3>
+<p>Alexandria, Virginia</p>
+
+<div class="skills">
+
+<h3>Skills</h3>
+
+<ul>
+<li>Stata</li>
+<li>Python</li>
+<li>Excel</li>
+<li>Economic Data Analysis</li>
+<li>Macroeconomic Policy</li>
+<li>Data Visualization</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="right">
 
 <h1>About Me</h1>
 
 <p>
-Hi! I'm Lesly Castro Galindo, a senior at the College of William & Mary, majoring in Economics with a minor in Data Science. I'm passionate about macroeconomics and accounting, and am excited to grow my expertise in policy and data-driven economic analysis. Through my coursework, including Econometrics, Intermediate Micro & Macro, International Trade Theory, and Data Science, I’ve developed a strong foundation in both economic theory and applied data analysis. I enjoy using tools like Stata, Python, and Excel to explore trends, solve problems, and inform strategic decisions. My recent research project includes analyzing trade patterns and studying inflation-unemployment dynamics through the Phillips Curve. These experiences sparked a deeper interest in combining policy and data to better understand global markets and their impact on consumers and producers. I’m eager to continue learning and contributing to the intersection of economics, accounting, and data science in future roles.
-<br><br>
+Hi! I'm Lesly Castro Galindo, a senior at the College of William & Mary, majoring in Economics with a minor in Data Science. I'm passionate about macroeconomics and accounting, and am excited to grow my expertise in policy and data-driven economic analysis. Through my coursework, including Econometrics, Intermediate Micro & Macro, International Trade Theory, and Data Science, I’ve developed a strong foundation in both economic theory and applied data analysis.
+</p>
+
+<p>
+I enjoy using tools like Stata, Python, and Excel to explore trends, solve problems, and inform strategic decisions. My recent research project includes analyzing trade patterns and studying inflation-unemployment dynamics through the Phillips Curve. These experiences sparked a deeper interest in combining policy and data to better understand global markets and their impact on consumers and producers.
+</p>
+
+<p>
 Outside the classroom, I enjoy moving my body! I have played soccer since I can remember, picked up pickleball, and have a love/hate relationship with running. I love going to the beach and spending quality time with my friends. I have been a Taylor Swift fan since I can remember!
 </p>
+
+</div>
+
+</div>
 
 </div>
 
