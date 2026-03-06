@@ -54,39 +54,41 @@ color:#555;
 line-height:1.6;
 }
 
-/* SONG LIST */
+/* FLEX LAYOUT FOR IMAGE + TEXT */
 
-.song{
+.row{
 display:flex;
-align-items:center;
-gap:15px;
-margin-bottom:15px;
+align-items:flex-start;
+gap:20px;
+margin-bottom:20px;
 }
 
-/* SQUARE ALBUM COVERS */
+/* SQUARE IMAGES */
 
-.song img{
-width:90px;
-height:90px;
+.row img{
+width:120px;
+height:120px;
 object-fit:cover;
 border-radius:10px;
 }
 
-/* MEMORY & TRIP IMAGES */
+/* TEXT AREA */
 
-.section img{
-width:100%;
-max-width:500px;
-border-radius:10px;
-margin-top:15px;
+.text{
+flex:1;
 }
 
 /* MOBILE */
 
 @media (max-width:700px){
 
-.song{
-flex-direction:row;
+.row{
+flex-direction:column;
+}
+
+.row img{
+width:100%;
+height:auto;
 }
 
 }
@@ -113,19 +115,25 @@ flex-direction:row;
 <div class="section">
 <h2>My Top 3 Songs Right Now</h2>
 
-<div class="song">
+<div class="row">
 <img src="opalite.jpg" alt="Opalite">
+<div class="text">
 <p>"Opalite" – Taylor Swift</p>
 </div>
-
-<div class="song">
-<img src="dance.jpg" alt="Dance With Me">
-<p>"Dance With Me" – Bruno Mars</p>
 </div>
 
-<div class="song">
+<div class="row">
+<img src="dance.jpg" alt="Dance With Me">
+<div class="text">
+<p>"Dance With Me" – Bruno Mars</p>
+</div>
+</div>
+
+<div class="row">
 <img src="dishes.jpg" alt="Breakin Dishes">
+<div class="text">
 <p>"Breakin' Dishes" – Rihanna</p>
+</div>
 </div>
 
 </div>
@@ -135,11 +143,17 @@ flex-direction:row;
 <div class="section">
 <h2>Favorite William & Mary Memory</h2>
 
+<div class="row">
+
+<img src="wm_memory.JPG" alt="Sunken Garden William and Mary">
+
+<div class="text">
 <p>
 One of my favorite memories at William & Mary has been spending time at Sunken Gardens with my friends. I have had countless picnics and club meetings, and even watched solar eclipses there. In my second year, I lived at Chandler Hall, which is less than a minute's walk away. No matter what, Sunken Garden holds endless memories, and I couldn't ask for anything more.
 </p>
+</div>
 
-<img src="wm_memory.JPG" alt="Sunken Garden William and Mary">
+</div>
 
 </div>
 
@@ -148,11 +162,17 @@ One of my favorite memories at William & Mary has been spending time at Sunken G
 <div class="section">
 <h2>Favorite Trip</h2>
 
+<div class="row">
+
+<img src="yosemite.JPG" alt="California Trip">
+
+<div class="text">
 <p>
 One of my favorite trips was summer 2024, when my younger sister and I flew to Los Angeles, California. While we were there, we explored Hollywood, Malibu, Santa Monica, Disneyland, drove up to Sequoia, and visited Yosemite. It was a busy week, but it was one of my favorite trips ever!
 </p>
+</div>
 
-<img src="yosemite.JPG" alt="California Trip">
+</div>
 
 </div>
 
