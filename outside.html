@@ -13,6 +13,8 @@ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 background:#f4f6f8;
 }
 
+/* NAVBAR */
+
 nav{
 background:white;
 padding:18px 60px;
@@ -26,6 +28,8 @@ text-decoration:none;
 color:#003366;
 }
 
+/* MAIN CONTAINER */
+
 .container{
 max-width:900px;
 margin:60px auto;
@@ -34,13 +38,15 @@ padding:40px;
 box-shadow:0 4px 20px rgba(0,0,0,0.05);
 }
 
+/* SECTIONS */
+
 .section{
 margin-bottom:50px;
 }
 
 .section h2{
 color:#003366;
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
 .section p{
@@ -48,29 +54,41 @@ color:#555;
 line-height:1.6;
 }
 
-/* Song images */
+/* SONG LIST */
 
 .song{
 display:flex;
 align-items:center;
+gap:15px;
 margin-bottom:15px;
 }
 
+/* SQUARE ALBUM COVERS */
+
 .song img{
-width:80px;
-height:80px;
+width:90px;
+height:90px;
 object-fit:cover;
-border-radius:8px;
-margin-right:15px;
+border-radius:10px;
 }
 
-/* Large images */
+/* MEMORY & TRIP IMAGES */
 
 .section img{
 width:100%;
-max-width:600px;
+max-width:500px;
 border-radius:10px;
 margin-top:15px;
+}
+
+/* MOBILE */
+
+@media (max-width:700px){
+
+.song{
+flex-direction:row;
+}
+
 }
 
 </style>
@@ -90,45 +108,51 @@ margin-top:15px;
 
 <h1>Outside the Classroom</h1>
 
+<!-- SONGS -->
+
 <div class="section">
 <h2>My Top 3 Songs Right Now</h2>
 
 <div class="song">
 <img src="opalite.jpg" alt="Opalite">
-<p>"Opalite" by Taylor Swift</p>
+<p>"Opalite" – Taylor Swift</p>
 </div>
 
 <div class="song">
 <img src="dance.jpg" alt="Dance With Me">
-<p>"Dance With Me" by Bruno Mars</p>
+<p>"Dance With Me" – Bruno Mars</p>
 </div>
 
 <div class="song">
 <img src="dishes.jpg" alt="Breakin Dishes">
-<p>"Breakin' Dishes" by Rihanna</p>
+<p>"Breakin' Dishes" – Rihanna</p>
 </div>
 
 </div>
+
+<!-- MEMORY -->
 
 <div class="section">
 <h2>Favorite William & Mary Memory</h2>
 
-<img src="wm_memory.jpg" alt="Sunken Garden William and Mary">
-
 <p>
-One of my favorite memories at William & Mary has been spending time at Sunken Gardens with my friends. I have had countless picnics and club meetings, and even watched solar eclipses there. In my second year, I lived at Chandler Hall, which is less than a minute's walk from. No matter what, Sunken Garden holds endless memories, and I couldn't ask for anything more.
+One of my favorite memories at William & Mary has been spending time at Sunken Gardens with my friends. I have had countless picnics and club meetings, and even watched solar eclipses there. In my second year, I lived at Chandler Hall, which is less than a minute's walk away. No matter what, Sunken Garden holds endless memories, and I couldn't ask for anything more.
 </p>
 
+<img src="wm_memory.JPG" alt="Sunken Garden William and Mary">
+
 </div>
+
+<!-- TRIP -->
 
 <div class="section">
 <h2>Favorite Trip</h2>
 
-<img src="yosemite.jpg" alt="Los Angeles Trip">
-
 <p>
-One of my favorite trips was summer 2024, when my younger sister and I flew to Los Angeles, California. While we were there, we did a lot of exploring, adventured in Hollywood, went to Malibu, Santa Monica, and Disneyland, drove up to Sequoia, and visited Yosemite. It was a busy week, but it was one of my favorite trips ever!
+One of my favorite trips was summer 2024, when my younger sister and I flew to Los Angeles, California. While we were there, we explored Hollywood, Malibu, Santa Monica, Disneyland, drove up to Sequoia, and visited Yosemite. It was a busy week, but it was one of my favorite trips ever!
 </p>
+
+<img src="yosemite.JPG" alt="California Trip">
 
 </div>
 
